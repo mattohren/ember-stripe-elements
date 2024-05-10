@@ -301,6 +301,13 @@ export default class StripeService extends Service {
   createSource() {
     return this.instance.createSource(...arguments);
   }
+  
+  /**
+   * @see https://docs.stripe.com/js/confirmation_tokens/create_confirmation_token
+   */
+  createConfirmationToken() {
+    return this.instance.createConfirmationToken(..arguments)
+  }
 
   /**
    * @see https://stripe.com/docs/js/tokens_sources/retrieve_source
