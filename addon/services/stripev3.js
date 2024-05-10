@@ -306,7 +306,7 @@ export default class StripeService extends Service {
    * @see https://docs.stripe.com/js/confirmation_tokens/create_confirmation_token
    */
   createConfirmationToken() {
-    return this.instance.createConfirmationToken(..arguments)
+    return this.instance.createConfirmationToken(...arguments);
   }
 
   /**
